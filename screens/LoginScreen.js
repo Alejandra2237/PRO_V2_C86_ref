@@ -49,7 +49,7 @@ export default class LoginScreen extends Component {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(() => {
-        this.props.navigation.replace("Dashboard");
+        this.props.navigation.replace("Panel");
       })
       .catch(error => {
         Alert.alert(error.message);
@@ -87,10 +87,10 @@ export default class LoginScreen extends Component {
             style={[styles.button, { marginTop: 20 }]}
             onPress={() => this.signIn(email, password)}
           >
-            <Text style={styles.buttonText}>Login</Text>
+            <Text style={styles.buttonText}>Inci de sesión</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => this.props.navigation.navigate("RegisterScreen")}
+            onPress={() => this.props.navigation.navigate("PantallaRegistro")}
           >
             <Text style={styles.buttonTextNewUser}>¿Usuario nuevo?</Text>
           </TouchableOpacity>
