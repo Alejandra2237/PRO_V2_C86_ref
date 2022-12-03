@@ -87,7 +87,7 @@ export default class Profile extends Component {
               ></Image>
             </View>
             <View style={styles.appTitleTextContainer}>
-              <Text style={styles.appTitleText}>Storytelling App</Text>
+              <Text style={styles.appTitleText}>App para contar historias</Text>
             </View>
           </View>
           <View style={styles.screenContainer}>
@@ -99,7 +99,7 @@ export default class Profile extends Component {
               <Text style={styles.nameText}>{this.state.name}</Text>
             </View>
             <View style={styles.themeContainer}>
-              <Text style={styles.themeText}>Dark Theme</Text>
+              <Text style={styles.themeText}>Tema oscuro</Text>
               <Switch
                 style={{
                   transform: [{ scaleX: 1.3 }, { scaleY: 1.3 }]
