@@ -5,7 +5,7 @@ import firebase from "firebase";
 export default class Logout extends Component {
   componentDidMount() {
     firebase.auth().signOut();
-    this.props.navigation.replace("inicioSesion");
+    this.props.navigation.replace("InicioSesion");
   }
   render() {
     return (
